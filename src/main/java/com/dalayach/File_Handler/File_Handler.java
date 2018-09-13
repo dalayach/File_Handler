@@ -24,7 +24,7 @@ public class File_Handler
     *  @param  fileName       the name of the file
     *  @return                a String containing the file contents
     */
-   public String load_File(String fileName)
+   private static String load_File(String fileName)
    {
    
       String result = "";
@@ -102,6 +102,18 @@ public class File_Handler
       }
       
       return result;
+   
+   }
+
+   public static String fetch_Secret(String option)
+   {
+   
+      if(option.equals("wot") || option.equals("WOT"))
+         return load_File("C:/Users/David/Documents/__Programming/__JAVA/___Workspace/_temp holder/keys_for_applications/WOT_PlayerComp_V1_App_ID.txt");
+      
+      
+      else 
+         return "";
    
    }
 
