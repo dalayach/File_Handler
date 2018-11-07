@@ -108,9 +108,16 @@ public class File_Handler
    public static String fetch_Secret(String option)
    {
    
-      if(option.equals("wot") || option.equals("WOT"))
+      if(option.toLowerCase().equals("wot"))
          return load_File("C:/Users/David/Documents/__Programming/__JAVA/___Workspace/_temp holder/keys_for_applications/WOT_PlayerComp_V1_App_ID.txt");
       
+      /*
+      else if(option.equals("") || option.equals(""))
+         return load_File("");
+         */
+         
+      else if(option.toLowerCase().equals("google+") || option.toLowerCase().equals("youtube") || option.toLowerCase().equals("google"))
+         return load_File("C:/Users/David/Documents/__Programming/__JAVA/___Workspace/_temp holder/keys_for_applications/google_api_key.txt");
       
       else 
          return "";
