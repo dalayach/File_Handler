@@ -123,6 +123,13 @@ public class File_Handler
          return "";
    
    }
+   
+   public static String fetch_Email()
+   {
+   
+      return load_File("C:/Users/David/Documents/__Programming/__JAVA/___Workspace/_temp holder/keys_for_applications/programming_email.txt");
+   
+   }
 
    public static void main(String[] args)
    {
